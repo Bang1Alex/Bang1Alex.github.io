@@ -6,7 +6,7 @@
   <link href="https://bang1alex.github.io/atom.xml" rel="self"/>
   
   <link href="https://bang1alex.github.io/"/>
-  <updated>1985-10-26T08:15:00.000Z</updated>
+  <updated>2022-10-02T15:54:14.200Z</updated>
   <id>https://bang1alex.github.io/</id>
   
   <author>
@@ -15,6 +15,228 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js高级</title>
+    <link href="https://bang1alex.github.io/2022/10/02/js-gao-ji/"/>
+    <id>https://bang1alex.github.io/2022/10/02/js-gao-ji/</id>
+    <published>2022-10-02T15:52:57.000Z</published>
+    <updated>2022-10-02T15:54:14.200Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;简介&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;JavaScript-高级部分&quot;&gt;&lt;a href=&quot;#JavaScript-高级部分&quot; class=&quot;headerlink&quot; title=&quot;JavaScript</summary>
+        
+      
+    
+    
+    
+    <category term="javaScript" scheme="https://bang1alex.github.io/categories/javaScript/"/>
+    
+    
+    <category term="javaScript" scheme="https://bang1alex.github.io/tags/javaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue-张天禹笔记</title>
+    <link href="https://bang1alex.github.io/2022/10/02/vue-zhang-tian-yu-bi-ji/"/>
+    <id>https://bang1alex.github.io/2022/10/02/vue-zhang-tian-yu-bi-ji/</id>
+    <published>2022-10-02T15:42:19.000Z</published>
+    <updated>2022-10-02T15:56:41.185Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;简介&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;Vue笔记&quot;&gt;&lt;a href=&quot;#Vue笔记&quot; class=&quot;headerlink&quot; title=&quot;Vue笔记&quot;&gt;&lt;/a&gt;Vue笔记&lt;/h1&gt;&lt;h2 id=&quot;初始Vue&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Vue" scheme="https://bang1alex.github.io/categories/Vue/"/>
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/categories/Vue/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="笔记" scheme="https://bang1alex.github.io/categories/Vue/%E9%9D%A2%E8%AF%95%E9%A2%98/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Vue" scheme="https://bang1alex.github.io/tags/Vue/"/>
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue-面试题</title>
+    <link href="https://bang1alex.github.io/2022/10/02/vue-mian-shi-ti/"/>
+    <id>https://bang1alex.github.io/2022/10/02/vue-mian-shi-ti/</id>
+    <published>2022-10-02T15:32:15.000Z</published>
+    <updated>2022-10-02T15:53:46.779Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;简介&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Vue-面试专题&quot;&gt;&lt;a href=&quot;#Vue-面试专题&quot; class=&quot;headerlink&quot; title=&quot;Vue 面试专题&quot;&gt;&lt;/a&gt;Vue 面试专题&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="Vue" scheme="https://bang1alex.github.io/categories/Vue/"/>
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/categories/Vue/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+    <category term="Vue" scheme="https://bang1alex.github.io/tags/Vue/"/>
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TypeScript</title>
+    <link href="https://bang1alex.github.io/2022/10/02/typescript/"/>
+    <id>https://bang1alex.github.io/2022/10/02/typescript/</id>
+    <published>2022-10-02T15:30:09.000Z</published>
+    <updated>2022-10-02T15:53:51.072Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;简介&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;1、什么是TypeScript？&lt;br&gt;TypeScript是JavaScript的加强版，它给JavaScript添加了可选的静态类型和基于类的面向对象编程，它拓展了JavaScript的语法。&lt;/</summary>
+        
+      
+    
+    
+    
+    <category term="TS" scheme="https://bang1alex.github.io/categories/TS/"/>
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/categories/TS/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="TS" scheme="https://bang1alex.github.io/tags/TS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javaScript</title>
+    <link href="https://bang1alex.github.io/2022/10/02/javascript/"/>
+    <id>https://bang1alex.github.io/2022/10/02/javascript/</id>
+    <published>2022-10-02T15:28:38.000Z</published>
+    <updated>2022-10-02T15:36:49.210Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;简介&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;JavaScript&quot;&gt;&lt;a href=&quot;#JavaScript&quot; class=&quot;headerlink&quot; title=&quot;JavaScript&quot;&gt;&lt;/a&gt;JavaScript&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="javaScript" scheme="https://bang1alex.github.io/categories/javaScript/"/>
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/categories/javaScript/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="javaScript" scheme="https://bang1alex.github.io/tags/javaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器</title>
+    <link href="https://bang1alex.github.io/2022/10/02/liu-lan-qi/"/>
+    <id>https://bang1alex.github.io/2022/10/02/liu-lan-qi/</id>
+    <published>2022-10-02T15:26:33.000Z</published>
+    <updated>2022-10-02T15:46:26.456Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;简介&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;浏览器&quot;&gt;&lt;a href=&quot;#浏览器&quot; class=&quot;headerlink&quot; title=&quot;浏览器&quot;&gt;&lt;/a&gt;浏览器&lt;/h1&gt;&lt;h3 id=&quot;从输入URL到页面加载的全过程&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="浏览器" scheme="https://bang1alex.github.io/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="浏览器" scheme="https://bang1alex.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>b</title>
+    <link href="https://bang1alex.github.io/2022/10/02/ji-suan-ji-wang-luo/"/>
+    <id>https://bang1alex.github.io/2022/10/02/ji-suan-ji-wang-luo/</id>
+    <published>2022-10-02T15:17:34.000Z</published>
+    <updated>2022-10-02T15:46:21.910Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;简介&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;HTTP-和-HTTPS&quot;&gt;&lt;a href=&quot;#HTTP-和-HTTPS&quot; class=&quot;headerlink&quot; title=&quot;HTTP 和 HTTPS&quot;&gt;&lt;/a&gt;HTTP 和</summary>
+        
+      
+    
+    
+    
+    <category term="网络" scheme="https://bang1alex.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/categories/%E7%BD%91%E7%BB%9C/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+    <category term="面试题" scheme="https://bang1alex.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="网络" scheme="https://bang1alex.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

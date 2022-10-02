@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Alex">
+    <meta name="keywords" content="web, http">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Alex</title>
+    <title>Vue-面试题 | Alex</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -398,12 +398,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Vue-面试题</h1>
                 </div>
             </div>
         </div>
@@ -517,12 +517,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Vue/">
+                                <span class="chip bg-color">Vue</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                                <span class="chip bg-color">面试题</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Vue/" class="post-category">
+                                Vue
+                            </a>
+                        
+                            <a href="/categories/Vue/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category">
+                                面试题
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -531,7 +552,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-10-01
+                    2022-10-02
                 </div>
                 
 
@@ -552,19 +573,224 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+                <blockquote>
+<p>简介</p>
+</blockquote>
+<h2 id="Vue-面试专题"><a href="#Vue-面试专题" class="headerlink" title="Vue 面试专题"></a>Vue 面试专题</h2><h3 id="简述MVVM"><a href="#简述MVVM" class="headerlink" title="简述MVVM"></a>简述MVVM</h3><p><strong>什么是MVVM？</strong></p>
+<p><code>视图模型双向绑定</code>，是<code>Model-View-ViewModel</code>的缩写，也就是把<code>MVC</code>中的<code>Controller</code>演变成<code>ViewModel。Model</code>层代表数据模型，<code>View</code>代表UI组件，<code>ViewModel</code>是<code>View</code>和<code>Model</code>层的桥梁，数据会绑定到<code>viewModel</code>层并自动将数据渲染到页面中，视图变化的时候会通知<code>viewModel</code>层更新数据。以前是操作DOM结构更新视图，现在是<code>数据驱动视图</code>。</p>
+<p><strong>MVVM的优点：</strong></p>
+<p>1.<code>低耦合</code>。视图（View）可以独立于Model变化和修改，一个Model可以绑定到不同的View上，当View变化的时候Model可以不变化，当Model变化的时候View也可以不变；<br>2.<code>可重用性</code>。你可以把一些视图逻辑放在一个Model里面，让很多View重用这段视图逻辑。<br>3.<code>独立开发</code>。开发人员可以专注于业务逻辑和数据的开发(ViewModel)，设计人员可以专注于页面设计。<br>4.<code>可测试</code>。</p>
+<h3 id="Vue底层实现原理"><a href="#Vue底层实现原理" class="headerlink" title="Vue底层实现原理"></a>Vue底层实现原理</h3><p>vue.js是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter和getter，在数据变动时发布消息给订阅者，触发相应的监听回调<br>Vue是一个典型的MVVM框架，模型（Model）只是普通的javascript对象，修改它则试图（View）会自动更新。这种设计让状态管理变得非常简单而直观</p>
+<p><strong>Observer（数据监听器）</strong> : Observer的核心是通过Object.defineProprtty()来监听数据的变动，这个函数内部可以定义setter和getter，每当数据发生变化，就会触发setter。这时候Observer就要通知订阅者，订阅者就是Watcher</p>
+<p><strong>Watcher（订阅者）</strong> : Watcher订阅者作为Observer和Compile之间通信的桥梁，主要做的事情是：</p>
+<ol>
+<li> 在自身实例化时往属性订阅器(dep)里面添加自己</li>
+<li> 自身必须有一个update()方法</li>
+<li> 待属性变动dep.notice()通知时，能调用自身的update()方法，并触发Compile中绑定的回调</li>
+</ol>
+<p><strong>Compile（指令解析器）</strong> : Compile主要做的事情是解析模板指令，将模板中变量替换成数据，然后初始化渲染页面视图，并将每个指令对应的节点绑定更新函数，添加鉴定数据的订阅者，一旦数据有变动，收到通知，更新试图</p>
+<p>传送门：☞ <a target="_blank" rel="noopener" href="https://juejin.cn/post/6994959998283907102#heading-2">20分钟吃透Diff算法核心原理</a></p>
+<h3 id="谈谈对vue生命周期的理解？"><a href="#谈谈对vue生命周期的理解？" class="headerlink" title="谈谈对vue生命周期的理解？"></a>谈谈对vue生命周期的理解？</h3><p>每个<code>Vue</code>实例在创建时都会经过一系列的初始化过程，<code>vue</code>的生命周期钩子，就是说在达到某一阶段或条件时去触发的函数，目的就是为了完成一些动作或者事件</p>
+<ul>
+<li><code>create阶段</code>：vue实例被创建<br>  <code>beforeCreate</code>: 最初调用触发，创建前，此时data和methods中的数据都还没有初始化，data和events都不能用<br>  <code>created</code>： 创建完毕，data中有值，未挂载，data和events已经初始化好，data已经具有响应式；在这里可以发送请求</li>
+<li><code>mount阶段</code>： vue实例被挂载到真实DOM节点<br>  <code>beforeMount</code>：在模版编译之后，渲染之前触发，可以发起服务端请求，去数据，ssr中不可用，基本用不上这个hook<br>  <code>mounted</code>: 在渲染之后触发，此时可以操作DOM，并能访问组件中的DOM以及$ref,SSR中不可用</li>
+<li><code>update阶段</code>：当vue实例里面的data数据变化时，触发组件的重新渲染<br>  <code>beforeUpdate</code> :更新前，在数据变化后，模版改变前触发，切勿使用它监听数据变化<br>  <code>updated</code>：更新后，在数据改变后，模版改变后触发，常用于重渲染案后的打点，性能检测或触发vue组件中非vue组件的更新</li>
+<li><code>destroy阶段</code>：vue实例被销毁<br>  <code>beforeDestroy</code>：实例被销毁前，组件卸载前触发，此时可以手动销毁一些方法，可以在此时清理事件、计时器或者取消订阅操作<br>  <code>destroyed</code>:卸载完毕后触发，销毁后，可以做最后的打点或事件触发操作</li>
+</ul>
+<h4 id="组件生命周期"><a href="#组件生命周期" class="headerlink" title="组件生命周期"></a>组件生命周期</h4><p>生命周期（父子组件） 父组件beforeCreate –&gt; 父组件created –&gt; 父组件beforeMount –&gt; 子组件beforeCreate –&gt; 子组件created –&gt; 子组件beforeMount –&gt; 子组件 mounted –&gt; 父组件mounted –&gt;父组件beforeUpdate –&gt;子组件beforeDestroy–&gt; 子组件destroyed –&gt; 父组件updated</p>
+<p><strong>加载渲染过程</strong>&nbsp;父beforeCreate-&gt;父created-&gt;父beforeMount-&gt;子beforeCreate-&gt;子created-&gt;子beforeMount-&gt;子mounted-&gt;父mounted</p>
+<p><strong>挂载阶段</strong>&nbsp;父created-&gt;子created-&gt;子mounted-&gt;父mounted</p>
+<p><strong>父组件更新阶段</strong>&nbsp;父beforeUpdate-&gt;父updated</p>
+<p><strong>子组件更新阶段</strong>&nbsp;父beforeUpdate-&gt;子beforeUpdate-&gt;子updated-&gt;父updated</p>
+<p><strong>销毁阶段</strong>&nbsp;父beforeDestroy-&gt;子beforeDestroy-&gt;子destroyed-&gt;父destroyed</p>
+<h3 id="computed与watch"><a href="#computed与watch" class="headerlink" title="computed与watch"></a><code>computed与watch</code></h3><p>通俗来讲，既能用 computed 实现又可以用 watch 监听来实现的功能，推荐用 computed， 重点在于 computed 的缓存功能 computed 计算属性是用来声明式的描述一个值依赖了其它的值，当所依赖的值或者变量 改变时，计算属性也会跟着改变； watch 监听的是已经在 data 中定义的变量，当该变量变化时，会触发 watch 中的方法。</p>
+<p><strong>watch 属性监听</strong> 是一个对象，键是需要观察的属性，值是对应回调函数，主要用来监听某些特定数据的变化，从而进行某些具体的业务逻辑操作,监听属性的变化，需要在数据变化时执行异步或开销较大的操作时使用</p>
+<p><strong>computed 计算属性</strong> 属性的结果会被<code>缓存</code>，当<code>computed</code>中的函数所依赖的属性没有发生改变的时候，那么调用当前函数的时候结果会从缓存中读取。除非依赖的响应式属性变化时才会重新计算，主要当做属性来使用 <code>computed</code>中的函数必须用<code>return</code>返回最终的结果 <code>computed</code>更高效，优先使用。<code>data 不改变，computed 不更新。</code></p>
+<p><strong>使用场景</strong> <code>computed</code>：当一个属性受多个属性影响的时候使用，例：购物车商品结算功能 <code>watch</code>：当一条数据影响多条数据的时候使用，例：搜索数据</p>
+<h4 id="组件中的data为什么是一个函数？"><a href="#组件中的data为什么是一个函数？" class="headerlink" title="组件中的data为什么是一个函数？"></a>组件中的data为什么是一个函数？</h4><p>1.一个组件被复用多次的话，也就会创建多个实例。本质上，这些实例用的都是同一个构造函数。 2.如果data是对象的话，对象属于引用类型，会影响到所有的实例。所以为了保证组件不同的实例之间data不冲突，data必须是一个函数。</p>
+<h4 id="为什么v-for和v-if不建议用在一起"><a href="#为什么v-for和v-if不建议用在一起" class="headerlink" title="为什么v-for和v-if不建议用在一起"></a>为什么v-for和v-if不建议用在一起</h4><p>1.当 v-for 和 v-if 处于同一个节点时，v-for 的优先级比 v-if 更高，这意味着 v-if 将分别重复运行于每个 v-for 循环中。如果要遍历的数组很大，而真正要展示的数据很少时，这将造成很大的性能浪费<br>2.这种场景建议使用 computed，先对数据进行过滤</p>
+<p>注意：3.x 版本中&nbsp;<code>v-if</code>&nbsp;总是优先于&nbsp;<code>v-for</code>&nbsp;生效。由于语法上存在歧义，建议避免在同一元素上同时使用两者。比起在模板层面管理相关逻辑，更好的办法是通过创建计算属性筛选出列表，并以此创建可见元素。</p>
+<p>解惑传送门 ☞ <a target="_blank" rel="noopener" href="https://v3.cn.vuejs.org/guide/migration/v-if-v-for.html#%E6%A6%82%E8%A7%88"># v-if 与 v-for 的优先级对比非兼容</a></p>
+<h3 id="React-Vue-项目中-key-的作用"><a href="#React-Vue-项目中-key-的作用" class="headerlink" title="React/Vue 项目中 key 的作用"></a>React/Vue 项目中 key 的作用</h3><ul>
+<li><p>key的作用是为了在diff算法执行时更快的找到对应的节点，<code>提高diff速度，更高效的更新虚拟DOM</code>;</p>
+<p>vue和react都是采用diff算法来对比新旧虚拟节点，从而更新节点。在vue的diff函数中，会根据新节点的key去对比旧节点数组中的key，从而找到相应旧节点。如果没找到就认为是一个新增节点。而如果没有key，那么就会采用遍历查找的方式去找到对应的旧节点。一种一个map映射，另一种是遍历查找。相比而言。map映射的速度更快。</p>
+</li>
+<li><p>为了在数据变化时强制更新组件，以避免<code>“就地复用”</code>带来的副作用。</p>
+<p>当 Vue.js 用&nbsp;<code>v-for</code>&nbsp;更新已渲染过的元素列表时，它默认用“就地复用”策略。如果数据项的顺序被改变，Vue 将不会移动 DOM 元素来匹配数据项的顺序，而是简单复用此处每个元素，并且确保它在特定索引下显示已被渲染过的每个元素。重复的key会造成渲染错误。</p>
+</li>
+</ul>
+<h3 id="数组扁平化转换"><a href="#数组扁平化转换" class="headerlink" title="数组扁平化转换"></a>数组扁平化转换</h3><p>在说到模版编译的时候，有可能会提到数组的转换，一般就用递归处理<br>将 [1,2,3,[4,5]] 转换成 </p>
+<pre><code>{
+    children:[
+        {
+            value:1
+        },
+        {
+            value:2
+        },
+        {
+            value:3
+        },
+        {
+            children:[
+                {
+                    value:4
+                },
+                {
+                    value:5
+                }
+            ]
+        },
+    ]
+}
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 测试数组</span>
+<span class="token keyword">var</span> arr <span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span>，<span class="token number">3</span>，<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 转换函数</span>
+<span class="token keyword">function</span> <span class="token function">convert</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//准备一个接收结果数组</span>
+    <span class="token keyword">var</span> result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 遍历传入的 arr 的每一项</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//如果遍历到的数字是number，直接放进入</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'number'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                value<span class="token punctuation">:</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">//如果遍历到这个项目是数组，那么就递归</span>
+            result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                children<span class="token punctuation">:</span> <span class="token function">convert</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token function">convert</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
+<h3 id="vue组件的通信方式"><a href="#vue组件的通信方式" class="headerlink" title="vue组件的通信方式"></a>vue组件的通信方式</h3><ul>
+<li><p><code>props</code>/<code>$emit</code> 父子组件通信</p>
+<p>父-&gt;子<code>props</code>，子-&gt;父 <code>$on、$emit</code> 获取父子组件实例 <code>parent、children</code> <code>Ref </code>获取实例的方式调用组件的属性或者方法 父-&gt;子孙 <code>Provide、inject</code> 官方不推荐使用，但是写组件库时很常用</p>
+</li>
+<li><p><code>$emit</code>/<code>$on</code> 自定义事件 兄弟组件通信</p>
+<p><code>Event Bus</code> 实现跨组件通信 <code>Vue.prototype.$bus = new Vue()</code> 自定义事件</p>
+</li>
+<li><p>vuex 跨级组件通信</p>
+<p>Vuex、<code>$attrs、$listeners</code> <code>Provide、inject</code></p>
+</li>
+</ul>
+<h3 id="emit-后面的两个参数是什么"><a href="#emit-后面的两个参数是什么" class="headerlink" title="$emit 后面的两个参数是什么"></a>$emit 后面的两个参数是什么</h3><p>1、父组件可以使用 props 把数据传给子组件。<br>2、子组件可以使用 $emit,让父组件监听到自定义事件 。</p>
+<p><code>vm.$emit( event, arg );</code>//触发当前实例上的事件，要传递的参数<br><code>vm.$on( event, fn );</code>//监听event事件后运行 fn； </p>
+<p>子组件</p>
+<pre class=" language-vue"><code class="language-vue"><template>
+  <div class="train-city">
+    <h3>父组件传给子组件的toCity:{{sendData}}</h3> 
+    <br/><button @click='select(`大连`)'>点击此处将‘大连’发射给父组件</button>
+  </div>
+</template>
+<script>
+  export default {
+    name:'trainCity',
+    props:['sendData'], // 用来接收父组件传给子组件的数据
+    methods:{
+      select(val) {
+        let data = {
+          cityName: val
+        };
+        this.$emit('showCityName',data);//select事件触发后，自动触发showCityName事件
+      }
+    }
+  }
+</script>
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
+<p>父组件</p>
+<pre class=" language-vue"><code class="language-vue"><template>
+    <div>
+        <div>父组件的toCity{{toCity}}</div>
+        <train-city @showCityName="updateCity" :sendData="toCity"></train-city>
+    </div>
+<template>
+<script>
+  export default {
+    name:'index',
+    components: {},
+    data () {
+      return {
+        toCity:"北京"
+      }
+    },
+    methods:{
+      updateCity(data){//触发子组件城市选择-选择城市的事件
+        this.toCity = data.cityName;//改变了父组件的值
+        console.log('toCity:'+this.toCity)
+      }
+    }
+  }
+</script>
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="nextTick的实现"><a href="#nextTick的实现" class="headerlink" title="nextTick的实现"></a>nextTick的实现</h3><ol>
+<li> <code>nextTick</code>是<code>Vue</code>提供的一个全局<code>API</code>,是在下次<code>DOM</code>更新循环结束之后执行延迟回调，在修改数据之后使用<code>$nextTick</code>，则可以在回调中获取更新后的<code>DOM</code>；</li>
+<li> Vue在更新DOM时是异步执行的。只要侦听到数据变化，<code>Vue</code>将开启1个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个<code>watcher</code>被多次触发，只会被推入到队列中-次。这种在缓冲时去除重复数据对于避免不必要的计算和<code>DOM</code>操作是非常重要的。<code>nextTick</code>方法会在队列中加入一个回调函数，确保该函数在前面的dom操作完成后才调用；</li>
+<li> 比如，我在干什么的时候就会使用nextTick，传一个回调函数进去，在里面执行dom操作即可；</li>
+<li> 我也有简单了解<code>nextTick</code>实现，它会在<code>callbacks</code>里面加入我们传入的函数，然后用<code>timerFunc</code>异步方式调用它们，首选的异步方式会是<code>Promise</code>。这让我明白了为什么可以在<code>nextTick</code>中看到<code>dom</code>操作结果。</li>
+</ol>
+<h3 id="nextTick的实现原理是什么？"><a href="#nextTick的实现原理是什么？" class="headerlink" title="nextTick的实现原理是什么？"></a>nextTick的实现原理是什么？</h3><p>在下次 DOM 更新循环结束之后执行延迟回调，在修改数据之后立即使用 nextTick 来获取更新后的 DOM。 nextTick主要使用了宏任务和微任务。 根据执行环境分别尝试采用Promise、MutationObserver、setImmediate，如果以上都不行则采用setTimeout定义了一个异步方法，多次调用nextTick会将方法存入队列中，通过这个异步方法清空当前队列。</p>
+<h3 id="使用过插槽么？用的是具名插槽还是匿名插槽或作用域插槽"><a href="#使用过插槽么？用的是具名插槽还是匿名插槽或作用域插槽" class="headerlink" title="使用过插槽么？用的是具名插槽还是匿名插槽或作用域插槽"></a>使用过插槽么？用的是具名插槽还是匿名插槽或作用域插槽</h3><p>vue中的插槽是一个非常好用的东西slot说白了就是一个占位的 在vue当中插槽包含三种一种是默认插槽（匿名）一种是具名插槽还有一种就是作用域插槽 匿名插槽就是没有名字的只要默认的都填到这里具名插槽指的是具有名字的</p>
+<h3 id="keep-alive的实现"><a href="#keep-alive的实现" class="headerlink" title="keep-alive的实现"></a>keep-alive的实现</h3><p>keep-alive是Vue.js的一个内置组件。它能够不活动的组件实例保存在内存中，而不是直接将其销毁，它是一个抽象组件，不会被渲染到真实DOM中，也不会出现在父组件链中。</p>
+<p>作用：实现组件缓存，保持这些组件的状态，以避免反复渲染导致的性能问题。 需要缓存组件 频繁切换，不需要重复渲染</p>
+<p>场景：tabs标签页 后台导航，vue性能优化</p>
+<p>原理：<code>Vue.js</code>内部将<code>DOM</code>节点抽象成了一个个的<code>VNode</code>节点，<code>keep-alive</code>组件的缓存也是基于<code>VNode</code>节点的而不是直接存储<code>DOM</code>结构。它将满足条件<code>（pruneCache与pruneCache）</code>的组件在<code>cache</code>对象中缓存起来，在需要重新渲染的时候再将<code>vnode</code>节点从<code>cache</code>对象中取出并渲染。</p>
+<h3 id="keep-alive-的属性"><a href="#keep-alive-的属性" class="headerlink" title="keep-alive 的属性"></a>keep-alive 的属性</h3><p>它提供了include与exclude两个属性，允许组件有条件地进行缓存。</p>
+<p>include定义缓存白名单，keep-alive会缓存命中的组件；exclude定义缓存黑名单，被命中的组件将不会被缓存；max定义缓存组件上限，超出上限使用LRU的策略置换缓存数据。</p>
+<p>在动态组件中的应用</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>keep<span class="token operator">-</span>alive <span class="token punctuation">:</span>include<span class="token operator">=</span><span class="token string">"whiteList"</span> <span class="token punctuation">:</span>exclude<span class="token operator">=</span><span class="token string">"blackList"</span> <span class="token punctuation">:</span>max<span class="token operator">=</span><span class="token string">"amount"</span><span class="token operator">></span>
+     <span class="token operator">&lt;</span>component <span class="token punctuation">:</span>is<span class="token operator">=</span><span class="token string">"currentComponent"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>component<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>keep<span class="token operator">-</span>alive<span class="token operator">></span>
+</code></pre>
+<p>在vue-router中的应用</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>keep<span class="token operator">-</span>alive <span class="token punctuation">:</span>include<span class="token operator">=</span><span class="token string">"whiteList"</span> <span class="token punctuation">:</span>exclude<span class="token operator">=</span><span class="token string">"blackList"</span> <span class="token punctuation">:</span>max<span class="token operator">=</span><span class="token string">"amount"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>router<span class="token operator">-</span>view<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>router<span class="token operator">-</span>view<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>keep<span class="token operator">-</span>alive<span class="token operator">></span>
+</code></pre>
+<p>vue 中完整示例</p>
+<pre><code>&lt;keep-alive&gt;
+    &lt;coma v-if="test"&gt;&lt;/coma&gt;
+    &lt;comb v-else="test"&gt;&lt;/comb&gt;
+&lt;/keep-alive&gt;
+&lt;button @click="test=handleClick"&gt;请点击&lt;/button&gt;
+
+export default {
+    data () {
+        return {
+            test: true
+        }
+    },
+    methods: {
+        handleClick () {
+            this.test = !this.test;
+        }
+    }
+}
+</code></pre>
+<p>参考:<br><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#keep-alive">keep-alive 官网</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/9523bb439950">keep-alive实现原理</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_38189842/article/details/103999989">Vue keep-alive的实现原理</a></p>
+<h3 id="mixin"><a href="#mixin" class="headerlink" title="mixin"></a>mixin</h3><p>mixin 项目变得复杂的时候，多个组件间有重复的逻辑就会用到mixin<br>多个组件有相同的逻辑，抽离出来<br>mixin并不是完美的解决方案，会有一些问题<br>vue3提出的Composition API旨在解决这些问题【追求完美是要消耗一定的成本的，如开发成本】<br>场景：PC端新闻列表和详情页一样的右侧栏目，可以使用mixin进行混合<br>劣势：1.变量来源不明确，不利于阅读 2.多mixin可能会造成命名冲突 3.mixin和组件可能出现多对多的关系，使得项目复杂度变高</p>
+<h3 id="vue-如何实现模拟-v-model-指令"><a href="#vue-如何实现模拟-v-model-指令" class="headerlink" title="vue 如何实现模拟 v-model 指令"></a>vue 如何实现模拟 v-model 指令</h3><p>可以使用 vue 自定义指令 Vue.directive() 模拟</p>
+<p>具体参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39157944/article/details/106262546">vue自定义指令模拟v-model指令</a></p>
+<h3 id="如何实现-v-model-说下思路"><a href="#如何实现-v-model-说下思路" class="headerlink" title="如何实现 v-model,说下思路"></a>如何实现 v-model,说下思路</h3><h3 id="Vue-Router-相关"><a href="#Vue-Router-相关" class="headerlink" title="Vue Router 相关"></a>Vue Router 相关</h3><h3 id="Vuex的理解及使用场景"><a href="#Vuex的理解及使用场景" class="headerlink" title="Vuex的理解及使用场景"></a>Vuex的理解及使用场景</h3><p>Vuex 是一个专为 Vue 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）。</p>
+<ol>
+<li> Vuex 的状态存储是响应式的；当 Vue 组件从 store 中读取状态的时候，</li>
+</ol>
+<p>若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新 2. 改变 store 中的状态的唯一途径就是显式地提交 (commit) mutation， 这样使得我们可以方便地跟踪每一个状态的变化 Vuex主要包括以下几个核心模块：</p>
+<ol>
+<li> State：定义了应用的状态数据</li>
+<li> Getter：在 store 中定义“getter”（可以认为是 store 的计算属性），</li>
+</ol>
+<p>就像计算属性一样，getter 的返回值会根据它的依赖被缓存起来， 且只有当它的依赖值发生了改变才会被重新计算 3. Mutation：是唯一更改 store 中状态的方法，且必须是同步函数 4. Action：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作 5. Module：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a7249773a1634f779c48f3f0ffabf968~tplv-k3u1fbpfcp-zoom-1.image"></p>
 
                 
             </div>
@@ -581,7 +807,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Alex</a>
+                    <a href="https://bang1alex.github.io" rel="external nofollow noreferrer">Alex</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -591,7 +817,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://bang1alex.github.io/2022/10/01/hello-world/">https://bang1alex.github.io/2022/10/01/hello-world/</a>
+                    <a href="https://bang1alex.github.io/2022/10/02/vue-mian-shi-ti/">https://bang1alex.github.io/2022/10/02/vue-mian-shi-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -602,9 +828,9 @@
                 </span>
                 <span class="reprint-info">
                     本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Alex</a>
+                    <a href="https://bang1alex.github.io" target="_blank">Alex</a>
                     !
                 </span>
             </div>
@@ -628,7 +854,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Vue/">
+                                    <span class="chip bg-color">Vue</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                                    <span class="chip bg-color">面试题</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -800,19 +1034,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/10/02/ji-suan-ji-wang-luo/">
+                <a href="/2022/10/02/vue-zhang-tian-yu-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="b">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Vue-张天禹笔记">
                         
-                        <span class="card-title">b</span>
+                        <span class="card-title">Vue-张天禹笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            计算网络面试 八股文 面试必备
+                            Vue笔记
                         
                     </div>
                     <div class="publish-info">
@@ -823,11 +1057,72 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BD%91%E7%BB%9C/" class="post-category">
-                                    网络
+                            <a href="/categories/Vue/" class="post-category">
+                                    Vue
                                 </a>
                             
-                            <a href="/categories/%E7%BD%91%E7%BB%9C/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category">
+                            <a href="/categories/Vue/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category">
+                                    面试题
+                                </a>
+                            
+                            <a href="/categories/Vue/%E9%9D%A2%E8%AF%95%E9%A2%98/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Vue/">
+                        <span class="chip bg-color">Vue</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                        <span class="chip bg-color">面试题</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/10/02/typescript/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="TypeScript">
+                        
+                        <span class="card-title">TypeScript</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Ts面试八股文面试必备
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/TS/" class="post-category">
+                                    TS
+                                </a>
+                            
+                            <a href="/categories/TS/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category">
                                     面试题
                                 </a>
                             
@@ -842,49 +1137,11 @@
                         <span class="chip bg-color">面试题</span>
                     </a>
                     
-                    <a href="/tags/%E7%BD%91%E7%BB%9C/">
-                        <span class="chip bg-color">网络</span>
+                    <a href="/tags/TS/">
+                        <span class="chip bg-color">TS</span>
                     </a>
                     
                 </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/10/01/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-01
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Alex
-                            
-                        </span>
-                    </div>
-                </div>
-
                 
             </div>
         </div>

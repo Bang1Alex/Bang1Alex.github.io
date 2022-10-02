@@ -452,13 +452,23 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">1</a></span>
+    <span class="count"><a href="/">8</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">11</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">6</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                     </div>
@@ -472,13 +482,23 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">1</a></span>
+    <span class="count"><a href="/">8</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">11</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">6</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                                 </div>
@@ -620,7 +640,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,1],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,8],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -662,7 +682,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [],
+                data: [{"name":"Vue","value":2},{"name":"javaScript","value":2},{"name":"浏览器","value":1},{"name":"面试题","value":2},{"name":"面试题","value":1},{"name":"面试题","value":1},{"name":"笔记","value":1},{"name":"网络","value":1},{"name":"面试题","value":1},{"name":"TS","value":1},{"name":"面试题","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -686,7 +706,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["面试题","Vue","javaScript","浏览器","网络","TS"]
             }
         ],
         yAxis: [
@@ -699,7 +719,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [6,2,2,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -867,6 +887,42 @@
     <div class="other-skills chip-container" data-aos="zoom-in-up">
         <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;其他技能</div>
         <div class="tag-chips center-align">
+            
+            
+            <a href="/tags/Vue/">
+                <span class="chip center-align waves-effect waves-light chip-default">Vue</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                <span class="chip center-align waves-effect waves-light chip-default">面试题</span>
+            </a>
+            
+            
+            
+            <a href="/tags/javaScript/">
+                <span class="chip center-align waves-effect waves-light chip-default">javaScript</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/">
+                <span class="chip center-align waves-effect waves-light chip-default">浏览器</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E7%BD%91%E7%BB%9C/">
+                <span class="chip center-align waves-effect waves-light chip-default">网络</span>
+            </a>
+            
+            
+            
+            <a href="/tags/TS/">
+                <span class="chip center-align waves-effect waves-light chip-default">TS</span>
+            </a>
+            
             
         </div>
     </div>

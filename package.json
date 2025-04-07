@@ -12,8 +12,12 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "valaxy": "0.22.16",
-    "valaxy-theme-yun": "0.22.16",
+    "konva": "^9.3.20",
+    "three": "^0.148.0",
+    "valaxy": "0.22.17",
+    "valaxy-theme-gitlink": "^0.1.8",
+    "valaxy-theme-sakura": "^0.9.3",
+    "valaxy-theme-yun": "^0.22.16",
     "yarn": "^1.22.22"
   },
   "devDependencies": {

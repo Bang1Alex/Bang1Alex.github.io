@@ -1,48 +1,24 @@
-import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { defineValaxyConfig } from 'valaxy'
+import type { ThemeUserConfig } from 'valaxy-theme-sakura'
 
-// add icons what you will need
-const safelist = [
-  'i-ri-home-line',
-]
-
-/**
- * User Config
- */
-export default defineValaxyConfig<UserThemeConfig>({
-  // site config see site.config.ts
-
-  theme: 'yun',
+export default defineValaxyConfig<ThemeUserConfig>({
+  theme: 'sakura',
 
   themeConfig: {
-    banner: {
-      enable: true,
-      title: 'Alex',
+    ui: {
+      primary: '#ff4e6a',
     },
 
-    pages: [
-      {
-        name: '我的小伙伴们',
-        url: '/links/',
-        icon: 'i-ri-genderless-line',
-        color: 'dodgerblue',
-      },
-      {
-        name: '喜欢的女孩子',
-        url: '/girls/',
-        icon: 'i-ri-women-line',
-        color: 'hotpink',
-      },
-    ],
-
-    footer: {
-      since: 2016,
-      beian: {
-        enable: true,
-        icp: '苏ICP备17038157号',
-      },
+    hero: {
+      title: 'Hello, sakura',
+      motto: '我用双手成就你的梦想',
+      urls: [
+        'https://haowallpaper.com/link/common/file/getCroppingImg/15789130517090624',
+        'https://haowallpaper.com/link/common/file/getCroppingImg/15942630369381760',
+        'https://haowallpaper.com/link/common/file/getCroppingImg/16445126326406528',
+        'https://haowallpaper.com/link/common/file/getCroppingImg/16573715995151744',
+      ],
+      style: 'filter-dot',
     },
   },
-
-  unocss: { safelist },
 })

@@ -1,0 +1,98 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Valaxy Theme Yun",
+    "home_page_url": "https://bang1alex.github.io/",
+    "feed_url": "https://bang1alex.github.io/feed.json",
+    "description": "欢迎来到Alex小站",
+    "icon": "https://valaxy.site/valaxy-logo.png",
+    "author": {
+        "name": "Alex",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<hr>\n<h1>探究自行车前后齿轮转动<GearComponent /></h1>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/gearTurning\" target=\"_blank\">https://bang1alex.github.io/posts/gearTurning</a> 阅读全文。</p>",
+            "url": "https://bang1alex.github.io/posts/gearTurning",
+            "title": "齿轮转动(模拟自行车)",
+            "date_modified": "2025-04-09T00:00:00.000Z",
+            "date_published": "2025-04-09T00:00:00.000Z",
+            "author": {
+                "name": "Alex",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>图形的吸附和参考线</h1>\n<CustomShape />\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/konva-component\" target=\"_blank\">https://bang1alex.github.io/posts/konva-component</a> 阅读全文。</p>",
+            "url": "https://bang1alex.github.io/posts/konva-component",
+            "title": "自定义组件Konva",
+            "date_modified": "2025-03-21T00:00:00.000Z",
+            "date_published": "2025-03-21T00:00:00.000Z",
+            "author": {
+                "name": "Alex",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>3D展馆</h1>\n<GalleryComponent />\n<p><img src=\"./a.png\" alt=\"\"></p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/three/threeJs-gallery\" target=\"_blank\">https://bang1alex.github.io/posts/three/threeJs-gallery</a> 阅读全文。</p>",
+            "url": "https://bang1alex.github.io/posts/three/threeJs-gallery",
+            "title": "3D画廊",
+            "date_modified": "2025-03-21T00:00:00.000Z",
+            "date_published": "2025-03-21T00:00:00.000Z",
+            "author": {
+                "name": "Alex",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>自定义组件</h1>\n<BszComponent />\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/custom-component\" target=\"_blank\">https://bang1alex.github.io/posts/custom-component</a> 阅读全文。</p>",
+            "url": "https://bang1alex.github.io/posts/custom-component",
+            "title": "自定义组件",
+            "date_modified": "2025-03-17T00:00:00.000Z",
+            "date_published": "2025-03-17T00:00:00.000Z",
+            "author": {
+                "name": "Alex",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>Vue</h1>\n<p>Vue是一个不错的框架</p>\n<h1>ref</h1>\n<p>ref</p>\n<p>王企鹅我去恶趣味</p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/my-demo\" target=\"_blank\">https://bang1alex.github.io/posts/my-demo</a> 阅读全文。</p>",
+            "url": "https://bang1alex.github.io/posts/my-demo",
+            "title": "Vue笔记",
+            "date_modified": "2025-03-17T00:00:00.000Z",
+            "date_published": "2025-03-17T00:00:00.000Z",
+            "author": {
+                "name": "Alex",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>jsx语法</h2>\n<p>就是在js中可以直接写html标签.</p>\n<h2>组件定义和组件传参</h2>\n<p>react中有两种定义组件的方式，function和class。组件中的属性或者state数据改变之后组件会重新</p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/test-custom-component\" target=\"_blank\">https://bang1alex.github.io/posts/test-custom-component</a> 阅读全文。</p>",
+            "url": "https://bang1alex.github.io/posts/test-custom-component",
+            "title": "React",
+            "date_modified": "2025-03-17T00:00:00.000Z",
+            "date_published": "2025-03-17T00:00:00.000Z",
+            "author": {
+                "name": "Alex",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post!</p>\n<h2>Usage</h2>\n<p>Modify `valaxy.</p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/hello-valaxy\" target=\"_blank\">https://bang1alex.github.io/posts/hello-valaxy</a> 阅读全文。</p>",
+            "url": "https://bang1alex.github.io/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2022-04-01T00:00:00.000Z",
+            "date_published": "2022-04-01T00:00:00.000Z",
+            "author": {
+                "name": "Alex",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}

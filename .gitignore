@@ -2,7 +2,7 @@
 node_modules/
 
 # 构建输出
-dist/
+
 build/
 out/
 
@@ -52,3 +52,14 @@ yarn.lock
 
 # TypeScript 缓存
 *.tsbuildinfo
+# valaxy fuse
+public/valaxy-fuse-list.json
+
+# valaxy rss
+public/feed.xml
+
+# valaxy rss
+public/atom.xml
+
+# valaxy rss
+public/feed.json

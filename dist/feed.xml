@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Valaxy Theme Yun</title>
+        <link>https://bang1alex.github.io/</link>
+        <description>欢迎来到Alex小站</description>
+        <lastBuildDate>Thu, 10 Apr 2025 08:11:59 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Valaxy Theme Yun</title>
+            <url>https://valaxy.site/valaxy-logo.png</url>
+            <link>https://bang1alex.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2025 © Alex</copyright>
+        <atom:link href="https://bang1alex.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[齿轮转动(模拟自行车)]]></title>
+            <link>https://bang1alex.github.io/posts/gearTurning</link>
+            <guid>https://bang1alex.github.io/posts/gearTurning</guid>
+            <pubDate>Wed, 09 Apr 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<hr>
+<h1>探究自行车前后齿轮转动<GearComponent /></h1>
+<br/><p>访问 <a href="https://bang1alex.github.io/posts/gearTurning" target="_blank">https://bang1alex.github.io/posts/gearTurning</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Alex)</author>
+        </item>
+        <item>
+            <title><![CDATA[自定义组件Konva]]></title>
+            <link>https://bang1alex.github.io/posts/konva-component</link>
+            <guid>https://bang1alex.github.io/posts/konva-component</guid>
+            <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>图形的吸附和参考线</h1>
+<CustomShape />
+<br/><p>访问 <a href="https://bang1alex.github.io/posts/konva-component" target="_blank">https://bang1alex.github.io/posts/konva-component</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Alex)</author>
+        </item>
+        <item>
+            <title><![CDATA[3D画廊]]></title>
+            <link>https://bang1alex.github.io/posts/three/threeJs-gallery</link>
+            <guid>https://bang1alex.github.io/posts/three/threeJs-gallery</guid>
+            <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>3D展馆</h1>
+<GalleryComponent />
+<p><img src="./a.png" alt=""></p>
+<br/><p>访问 <a href="https://bang1alex.github.io/posts/three/threeJs-gallery" target="_blank">https://bang1alex.github.io/posts/three/threeJs-gallery</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Alex)</author>
+        </item>
+        <item>
+            <title><![CDATA[自定义组件]]></title>
+            <link>https://bang1alex.github.io/posts/custom-component</link>
+            <guid>https://bang1alex.github.io/posts/custom-component</guid>
+            <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>自定义组件</h1>
+<BszComponent />
+<br/><p>访问 <a href="https://bang1alex.github.io/posts/custom-component" target="_blank">https://bang1alex.github.io/posts/custom-component</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Alex)</author>
+        </item>
+        <item>
+            <title><![CDATA[Vue笔记]]></title>
+            <link>https://bang1alex.github.io/posts/my-demo</link>
+            <guid>https://bang1alex.github.io/posts/my-demo</guid>
+            <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Vue</h1>
+<p>Vue是一个不错的框架</p>
+<h1>ref</h1>
+<p>ref</p>
+<p>王企鹅我去恶趣味</p>
+<br/><p>访问 <a href="https://bang1alex.github.io/posts/my-demo" target="_blank">https://bang1alex.github.io/posts/my-demo</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Alex)</author>
+        </item>
+        <item>
+            <title><![CDATA[React]]></title>
+            <link>https://bang1alex.github.io/posts/test-custom-component</link>
+            <guid>https://bang1alex.github.io/posts/test-custom-component</guid>
+            <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>jsx语法</h2>
+<p>就是在js中可以直接写html标签.</p>
+<h2>组件定义和组件传参</h2>
+<p>react中有两种定义组件的方式，function和class。组件中的属性或者state数据改变之后组件会重新</p>
+<br/><p>访问 <a href="https://bang1alex.github.io/posts/test-custom-component" target="_blank">https://bang1alex.github.io/posts/test-custom-component</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Alex)</author>
+        </item>
+        <item>
+            <title><![CDATA[Hello, Valaxy!]]></title>
+            <link>https://bang1alex.github.io/posts/hello-valaxy</link>
+            <guid>https://bang1alex.github.io/posts/hello-valaxy</guid>
+            <pubDate>Fri, 01 Apr 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post!</p>
+<h2>Usage</h2>
+<p>Modify `valaxy.</p>
+<br/><p>访问 <a href="https://bang1alex.github.io/posts/hello-valaxy" target="_blank">https://bang1alex.github.io/posts/hello-valaxy</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Alex)</author>
+        </item>
+    </channel>
+</rss>

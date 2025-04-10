@@ -1,7 +1,7 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: 'https://valaxy.site/',
+  url: 'https://bang1alex.github.io/',
   lang: 'zh-CN',
   title: 'Valaxy Theme Yun',
   author: {

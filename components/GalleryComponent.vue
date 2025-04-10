@@ -32,7 +32,7 @@ function startScene(container) {
   aspect = width / height
   scene = new THREE.Scene()
   scene.background = new THREE.Color(0xe9f4fc);
-  const url = `/utils/3DGallery/gallery.glb`
+  const url = `/gltf/gallery.glb`
   const loader = new GLTFLoader()
   loader.load(url, (model) => {
     sceneObject = model.scene
@@ -74,13 +74,15 @@ function startScene(container) {
     addControls()
     render()
 
-  })
+  },undefined, (error) => {
+  console.error('An error occurred:', error);
+})
 
   renderer = new THREE.WebGLRenderer({ antialias: true })
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(width, height)
   container.append(renderer.domElement)
-  window.addEventListener('resize', onWindowResize)
+  // window.addEventListener('resize', onWindowResize)
   loadFinish.value = true
 }
 
@@ -183,7 +185,7 @@ function loadImageAndName() {
   const promises = data.map((item, i) => {
     // const url = item.data.widgetScreenShot
     const { x, y, z, rotation } = data[i];
-    return createImage({ x, y, z, rotation, url:"http://gips0.baidu.com/it/u=3602773692,1512483864&fm=3028&app=3028&f=JPEG&fmt=auto?w=960&h=1280" });
+    return createImage({ x, y, z, rotation, url:"/xiaomei.jpg" });
   });
 
   Promise.all(promises)
@@ -226,7 +228,7 @@ function createText(x, y, z, rotation, name) {
   const loader = new FontLoader();
   return new Promise((resolve, reject) => {
     loader.load(
-      'http://localhost:4859/@fs/Users/sxbz01/Desktop/mydemo/blog-valaxy/utils/STFangsong_Regular.json', // 字体文件路径
+      '/STFangsong_Regular.json', // 字体文件路径
       function (font) {
         // 创建文字几何体
         const geometry = new TextGeometry(name, {
@@ -298,7 +300,12 @@ function removeTexts() {
 body {
   /* background-color: #000000; */
 }
-
+.statistics-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
 .rotation-pad {
   width: 150px;
   height: 150px;

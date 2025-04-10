@@ -81,9 +81,9 @@ class RotationPad {
         //                             - this.region.offsetHeight - 100 + 'px'
         console.log("sssssss",canvas.height,this.region.offsetHeight);
         
-        this.padElement.style.top = '60%'
+        this.padElement.style.bottom = '20px'
         // this.padElement.style.left = canvas.offsetWidth - this.region.offsetWidth - 20 + 'px'
-        this.padElement.style.right = "0px"
+        this.padElement.style.right = "20px"
         this.regionData.width = this.region.offsetWidth
         this.regionData.height = this.region.offsetHeight
         this.regionData.position = {

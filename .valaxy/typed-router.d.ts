@@ -27,12 +27,14 @@ declare module 'vue-router/auto-routes' {
     '/categories/': RouteRecordInfo<'/categories/', '/categories', Record<never, never>, Record<never, never>>,
     '/links/': RouteRecordInfo<'/links/', '/links', Record<never, never>, Record<never, never>>,
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
+    '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/custom-component': RouteRecordInfo<'/posts/custom-component', '/posts/custom-component', Record<never, never>, Record<never, never>>,
+    '/posts/gearTurning': RouteRecordInfo<'/posts/gearTurning', '/posts/gearTurning', Record<never, never>, Record<never, never>>,
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
     '/posts/konva-component': RouteRecordInfo<'/posts/konva-component', '/posts/konva-component', Record<never, never>, Record<never, never>>,
     '/posts/my-demo': RouteRecordInfo<'/posts/my-demo', '/posts/my-demo', Record<never, never>, Record<never, never>>,
     '/posts/test-custom-component': RouteRecordInfo<'/posts/test-custom-component', '/posts/test-custom-component', Record<never, never>, Record<never, never>>,
-    '/posts/threeJs-gallery': RouteRecordInfo<'/posts/threeJs-gallery', '/posts/threeJs-gallery', Record<never, never>, Record<never, never>>,
+    '/posts/three/threeJs-gallery': RouteRecordInfo<'/posts/three/threeJs-gallery', '/posts/three/threeJs-gallery', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 }

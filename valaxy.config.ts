@@ -2,7 +2,7 @@ import { defineValaxyConfig } from 'valaxy'
 import type { ThemeUserConfig } from 'valaxy-theme-sakura'
 
 export default defineValaxyConfig<ThemeUserConfig>({
-  theme: 'sakura',
+  theme: 'yun',
 
   themeConfig: {
     ui: {
@@ -10,7 +10,7 @@ export default defineValaxyConfig<ThemeUserConfig>({
     },
 
     hero: {
-      title: 'Hello, sakura',
+      title: 'Hello, Alex',
       motto: '我用双手成就你的梦想',
       urls: [
         'https://haowallpaper.com/link/common/file/getCroppingImg/15789130517090624',

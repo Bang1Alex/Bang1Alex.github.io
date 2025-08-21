@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "konva": "^9.3.20",
-    "three": "^0.148.1",
+    "three": "^0.148.0",
     "valaxy": "0.22.17",
     "valaxy-addon-meting": "^0.1.4",
     "valaxy-addon-waline": "^0.2.1",

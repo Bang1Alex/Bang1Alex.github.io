@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bang1alex.github.io/</id>
     <title>Alex ’s Blog</title>
-    <updated>2025-08-21T05:39:33.230Z</updated>
+    <updated>2025-08-21T05:52:43.186Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Alex</name>
@@ -21,7 +21,7 @@
         <link href="https://bang1alex.github.io/posts/gearTurning"/>
         <updated>2025-04-08T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<hr>
-<h1>探究自行车前后齿轮转动<GearComponent /></h1>
+<h1>探究自行车前后齿轮转动</h1>
 <GearComponent />
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/gearTurning" target="_blank">https://bang1alex.github.io/posts/gearTurning</a> 阅读全文。</p>]]></content>
         <author>

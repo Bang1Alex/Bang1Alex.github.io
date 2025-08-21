@@ -1,13 +1,14 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
+  timezone: 'Asia/Shanghai',
   url: 'https://bang1alex.github.io/',
   lang: 'zh-CN',
-  title: 'Valaxy Theme Yun',
+  title: 'Alex ’s Blog',
   author: {
     name: 'Alex',
   },
-  description: '欢迎来到Alex小站',
+  description: 'Alex ’s Notes',
   social: [
     {
       name: 'RSS',

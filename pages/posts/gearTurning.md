@@ -10,4 +10,6 @@ top: 1
 ---
 ---
 
-# 探究自行车前后齿轮转动<GearComponent />
+# 探究自行车前后齿轮转动
+
+<GearComponent />

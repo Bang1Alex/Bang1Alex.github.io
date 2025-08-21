@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 import * as THREE from 'three';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import TouchControls from '../utils/3DGallery/TouchControls.js';
 import data from '../utils/3DGallery/position.json';
 let renderer, camera, scene, controls
@@ -27,8 +27,8 @@ function init() {
 }
 function startScene(container) {
   if (loadFinish.value) return
-  width = 600
-  height = 400
+  width = 1200
+  height = 600
   aspect = width / height
   scene = new THREE.Scene()
   scene.background = new THREE.Color(0xe9f4fc);
@@ -82,7 +82,7 @@ function startScene(container) {
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(width, height)
   container.append(renderer.domElement)
-  // window.addEventListener('resize', onWindowResize)
+  window.addEventListener('resize', onWindowResize)
   loadFinish.value = true
 }
 
@@ -291,15 +291,11 @@ function removeTexts() {
 }
 </script>
 <template>
-    <!-- <img src="../public/favicon.svg" alt="Vue logo" /> -->
     <div class="statistics-container">
       <div class="canvas-container" ref="canvasContainerRef"></div>
     </div>
 </template>
 <style>
-body {
-  /* background-color: #000000; */
-}
 .statistics-container {
   position: relative;
   width: 100%;

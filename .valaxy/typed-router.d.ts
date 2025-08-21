@@ -30,7 +30,6 @@ declare module 'vue-router/auto-routes' {
     '/categories/[...its]': RouteRecordInfo<'/categories/[...its]', '/categories/:its(.*)', { its: ParamValue<true> }, { its: ParamValue<false> }>,
     '/links/': RouteRecordInfo<'/links/', '/links', Record<never, never>, Record<never, never>>,
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
-    '/posts/gearTurning': RouteRecordInfo<'/posts/gearTurning', '/posts/gearTurning', Record<never, never>, Record<never, never>>,
     '/posts/test-custom-component': RouteRecordInfo<'/posts/test-custom-component', '/posts/test-custom-component', Record<never, never>, Record<never, never>>,
     '/posts/three/threeJs-gallery': RouteRecordInfo<'/posts/three/threeJs-gallery', '/posts/three/threeJs-gallery', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,

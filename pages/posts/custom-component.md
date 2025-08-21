@@ -8,5 +8,3 @@ tags:
 top: 2
 ---
 # 自定义组件
-
-<BszComponent />

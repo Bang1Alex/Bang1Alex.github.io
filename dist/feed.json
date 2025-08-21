@@ -24,7 +24,7 @@
         },
         {
             "id": "",
-            "content_html": "<h1>图形的吸附和参考线</h1>\n<CustomShape />\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/konva-component\" target=\"_blank\">https://bang1alex.github.io/posts/konva-component</a> 阅读全文。</p>",
+            "content_html": "<h1>图形的吸附和参考线</h1>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/konva-component\" target=\"_blank\">https://bang1alex.github.io/posts/konva-component</a> 阅读全文。</p>",
             "url": "https://bang1alex.github.io/posts/konva-component",
             "title": "自定义组件Konva",
             "date_modified": "2025-03-21T00:00:00.000Z",
@@ -36,7 +36,7 @@
         },
         {
             "id": "",
-            "content_html": "<h1>3D展馆</h1>\n<GalleryComponent />\n<p><img src=\"./a.png\" alt=\"\"></p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/three/threeJs-gallery\" target=\"_blank\">https://bang1alex.github.io/posts/three/threeJs-gallery</a> 阅读全文。</p>",
+            "content_html": "<h1>3D展馆</h1>\n<p><img src=\"./a.png\" alt=\"\"></p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/three/threeJs-gallery\" target=\"_blank\">https://bang1alex.github.io/posts/three/threeJs-gallery</a> 阅读全文。</p>",
             "url": "https://bang1alex.github.io/posts/three/threeJs-gallery",
             "title": "3D画廊",
             "date_modified": "2025-03-21T00:00:00.000Z",
@@ -48,7 +48,7 @@
         },
         {
             "id": "",
-            "content_html": "<h1>自定义组件</h1>\n<BszComponent />\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/custom-component\" target=\"_blank\">https://bang1alex.github.io/posts/custom-component</a> 阅读全文。</p>",
+            "content_html": "<h1>自定义组件</h1>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/custom-component\" target=\"_blank\">https://bang1alex.github.io/posts/custom-component</a> 阅读全文。</p>",
             "url": "https://bang1alex.github.io/posts/custom-component",
             "title": "自定义组件",
             "date_modified": "2025-03-17T00:00:00.000Z",
@@ -72,7 +72,7 @@
         },
         {
             "id": "",
-            "content_html": "<h2>jsx语法</h2>\n<p>就是在js中可以直接写html标签.</p>\n<h2>组件定义和组件传参</h2>\n<p>react中有两种定义组件的方式，function和class。组件中的属性或者state数据改变之后组件会重新</p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/test-custom-component\" target=\"_blank\">https://bang1alex.github.io/posts/test-custom-component</a> 阅读全文。</p>",
+            "content_html": "<h2>jsx语法</h2>\n<p>就是在js中可以直接写html标签.</p>\n<h2>组件定义和组件传参</h2>\n<p>react中有两种定义组件的方式，function和class。组件中的属性或者state数据改变之</p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/test-custom-component\" target=\"_blank\">https://bang1alex.github.io/posts/test-custom-component</a> 阅读全文。</p>",
             "url": "https://bang1alex.github.io/posts/test-custom-component",
             "title": "React",
             "date_modified": "2025-03-17T00:00:00.000Z",
@@ -84,7 +84,7 @@
         },
         {
             "id": "",
-            "content_html": "<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post!</p>\n<h2>Usage</h2>\n<p>Modify `valaxy.</p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/hello-valaxy\" target=\"_blank\">https://bang1alex.github.io/posts/hello-valaxy</a> 阅读全文。</p>",
+            "content_html": "<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post!</p>\n<h2>Usage</h2>\n<p>Modify</p>\n<br/><p>访问 <a href=\"https://bang1alex.github.io/posts/hello-valaxy\" target=\"_blank\">https://bang1alex.github.io/posts/hello-valaxy</a> 阅读全文。</p>",
             "url": "https://bang1alex.github.io/posts/hello-valaxy",
             "title": "Hello, Valaxy!",
             "date_modified": "2022-04-01T00:00:00.000Z",

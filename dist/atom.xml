@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bang1alex.github.io/</id>
     <title>Valaxy Theme Yun</title>
-    <updated>2025-04-10T08:11:59.259Z</updated>
+    <updated>2025-08-21T03:22:11.042Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Alex</name>
@@ -36,7 +36,6 @@
         <link href="https://bang1alex.github.io/posts/konva-component"/>
         <updated>2025-03-21T00:00:00.000Z</updated>
         <content type="html"><![CDATA[<h1>图形的吸附和参考线</h1>
-<CustomShape />
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/konva-component" target="_blank">https://bang1alex.github.io/posts/konva-component</a> 阅读全文。</p>]]></content>
         <author>
             <name>Alex</name>
@@ -51,7 +50,6 @@
         <link href="https://bang1alex.github.io/posts/three/threeJs-gallery"/>
         <updated>2025-03-21T00:00:00.000Z</updated>
         <content type="html"><![CDATA[<h1>3D展馆</h1>
-<GalleryComponent />
 <p><img src="./a.png" alt=""></p>
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/three/threeJs-gallery" target="_blank">https://bang1alex.github.io/posts/three/threeJs-gallery</a> 阅读全文。</p>]]></content>
         <author>
@@ -67,7 +65,6 @@
         <link href="https://bang1alex.github.io/posts/custom-component"/>
         <updated>2025-03-17T00:00:00.000Z</updated>
         <content type="html"><![CDATA[<h1>自定义组件</h1>
-<BszComponent />
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/custom-component" target="_blank">https://bang1alex.github.io/posts/custom-component</a> 阅读全文。</p>]]></content>
         <author>
             <name>Alex</name>
@@ -102,7 +99,7 @@
         <content type="html"><![CDATA[<h2>jsx语法</h2>
 <p>就是在js中可以直接写html标签.</p>
 <h2>组件定义和组件传参</h2>
-<p>react中有两种定义组件的方式，function和class。组件中的属性或者state数据改变之后组件会重新</p>
+<p>react中有两种定义组件的方式，function和class。组件中的属性或者state数据改变之</p>
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/test-custom-component" target="_blank">https://bang1alex.github.io/posts/test-custom-component</a> 阅读全文。</p>]]></content>
         <author>
             <name>Alex</name>
@@ -120,7 +117,7 @@
 <p>Next Generation Static Blog Framework.</p>
 <p>Write your first post!</p>
 <h2>Usage</h2>
-<p>Modify `valaxy.</p>
+<p>Modify</p>
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/hello-valaxy" target="_blank">https://bang1alex.github.io/posts/hello-valaxy</a> 阅读全文。</p>]]></content>
         <author>
             <name>Alex</name>

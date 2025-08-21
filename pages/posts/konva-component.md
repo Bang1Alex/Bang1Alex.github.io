@@ -8,5 +8,3 @@ tags:
 top: 2
 ---
 # 图形的吸附和参考线
-
-<CustomShape />

@@ -10,6 +10,4 @@ top: 2
 # 3D展馆
 
 
-<GalleryComponent />
-
 ![](./a.png)

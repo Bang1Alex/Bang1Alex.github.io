@@ -4,7 +4,7 @@
         <title>Valaxy Theme Yun</title>
         <link>https://bang1alex.github.io/</link>
         <description>欢迎来到Alex小站</description>
-        <lastBuildDate>Thu, 10 Apr 2025 08:11:59 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Aug 2025 03:22:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -30,7 +30,6 @@
             <guid>https://bang1alex.github.io/posts/konva-component</guid>
             <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1>图形的吸附和参考线</h1>
-<CustomShape />
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/konva-component" target="_blank">https://bang1alex.github.io/posts/konva-component</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (Alex)</author>
         </item>
@@ -40,7 +39,6 @@
             <guid>https://bang1alex.github.io/posts/three/threeJs-gallery</guid>
             <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1>3D展馆</h1>
-<GalleryComponent />
 <p><img src="./a.png" alt=""></p>
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/three/threeJs-gallery" target="_blank">https://bang1alex.github.io/posts/three/threeJs-gallery</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (Alex)</author>
@@ -51,7 +49,6 @@
             <guid>https://bang1alex.github.io/posts/custom-component</guid>
             <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1>自定义组件</h1>
-<BszComponent />
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/custom-component" target="_blank">https://bang1alex.github.io/posts/custom-component</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (Alex)</author>
         </item>
@@ -76,7 +73,7 @@
             <content:encoded><![CDATA[<h2>jsx语法</h2>
 <p>就是在js中可以直接写html标签.</p>
 <h2>组件定义和组件传参</h2>
-<p>react中有两种定义组件的方式，function和class。组件中的属性或者state数据改变之后组件会重新</p>
+<p>react中有两种定义组件的方式，function和class。组件中的属性或者state数据改变之</p>
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/test-custom-component" target="_blank">https://bang1alex.github.io/posts/test-custom-component</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (Alex)</author>
         </item>
@@ -89,7 +86,7 @@
 <p>Next Generation Static Blog Framework.</p>
 <p>Write your first post!</p>
 <h2>Usage</h2>
-<p>Modify `valaxy.</p>
+<p>Modify</p>
 <br/><p>访问 <a href="https://bang1alex.github.io/posts/hello-valaxy" target="_blank">https://bang1alex.github.io/posts/hello-valaxy</a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (Alex)</author>
         </item>

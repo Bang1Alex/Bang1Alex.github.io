@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bang1alex.github.io/</id>
     <title>Alex ’s Blog</title>
-    <updated>2025-08-21T05:52:43.186Z</updated>
+    <updated>2025-08-22T08:56:20.526Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Alex</name>
@@ -15,22 +15,6 @@
     <logo>https://valaxy.site/valaxy-logo.png</logo>
     <icon>https://bang1alex.github.io/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © Alex</rights>
-    <entry>
-        <title type="html"><![CDATA[齿轮转动(模拟自行车)]]></title>
-        <id>https://bang1alex.github.io/posts/gearTurning</id>
-        <link href="https://bang1alex.github.io/posts/gearTurning"/>
-        <updated>2025-04-08T16:00:00.000Z</updated>
-        <content type="html"><![CDATA[<hr>
-<h1>探究自行车前后齿轮转动</h1>
-<GearComponent />
-<br/><p>访问 <a href="https://bang1alex.github.io/posts/gearTurning" target="_blank">https://bang1alex.github.io/posts/gearTurning</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>Alex</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2025-04-08T16:00:00.000Z</published>
-    </entry>
     <entry>
         <title type="html"><![CDATA[3D画廊]]></title>
         <id>https://bang1alex.github.io/posts/three/threeJs-gallery</id>

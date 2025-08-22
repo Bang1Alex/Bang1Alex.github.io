@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppLink: typeof import('./../node_modules/valaxy/client/components/AppLink.vue')['default']
     GalleryComponent: typeof import('./../components/GalleryComponent.vue')['default']
-    GearComponent: typeof import('./../components/GearComponent.vue')['default']
     HairyAlgoliaSearch: typeof import('./../node_modules/valaxy-theme-hairy/components/third/HairyAlgoliaSearch.vue')['default']
     HairyArticleImage: typeof import('./../node_modules/valaxy-theme-hairy/components/posts/HairyArticleImage.vue')['default']
     HairyArticleSeries: typeof import('./../node_modules/valaxy-theme-hairy/components/posts/HairyArticleSeries.vue')['default']

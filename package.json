@@ -12,6 +12,8 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "sass": "^1.90.0",
+    "scss": "^0.2.4",
     "three": "^0.148.0",
     "valaxy": "0.22.17",
     "valaxy-addon-meting": "^0.1.4",

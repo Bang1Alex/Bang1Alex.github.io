@@ -1,5 +1,5 @@
 {
-  "name": "valaxy-blog",
+  "name": "alex-blog",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -12,16 +12,13 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "sass": "^1.90.0",
-    "scss": "^0.2.4",
-    "three": "^0.148.0",
-    "valaxy": "0.22.17",
+    "valaxy": "0.26.3",
     "valaxy-addon-meting": "^0.1.4",
     "valaxy-addon-waline": "^0.2.1",
-    "valaxy-theme-hairy": "^1.2.7"
+    "valaxy-theme-hairy": "^1.2.7",
+    "valaxy-theme-yun": "0.26.3"
   },
   "devDependencies": {
-    "less": "^4.2.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.9.2"
   }
 }

@@ -30,9 +30,92 @@ declare module 'vue-router/auto-routes' {
     '/categories/[...its]': RouteRecordInfo<'/categories/[...its]', '/categories/:its(.*)', { its: ParamValue<true> }, { its: ParamValue<false> }>,
     '/links/': RouteRecordInfo<'/links/', '/links', Record<never, never>, Record<never, never>>,
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
-    '/posts/test-custom-component': RouteRecordInfo<'/posts/test-custom-component', '/posts/test-custom-component', Record<never, never>, Record<never, never>>,
-    '/posts/three/threeJs-gallery': RouteRecordInfo<'/posts/three/threeJs-gallery', '/posts/three/threeJs-gallery', Record<never, never>, Record<never, never>>,
+    '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
     '/tags/[tag]/': RouteRecordInfo<'/tags/[tag]/', '/tags/:tag', { tag: ParamValue<true> }, { tag: ParamValue<false> }>,
   }
+
+  /**
+   * Route file to route info map by unplugin-vue-router.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * Each key is a file path relative to the project root with 2 properties:
+   * - routes: union of route names of the possible routes when in this page (passed to useRoute<...>())
+   * - views: names of nested views (can be passed to <RouterView name="...">)
+   *
+   * @internal
+   */
+  export interface _RouteFileInfoMap {
+    'node_modules/valaxy-theme-hairy/pages/index.vue': {
+      routes: '/'
+      views: never
+    }
+    'node_modules/valaxy/client/pages/[...path].vue': {
+      routes: '/[...path]'
+      views: never
+    }
+    'pages/404.md': {
+      routes: '/404'
+      views: never
+    }
+    'pages/about/index.md': {
+      routes: '/about/'
+      views: never
+    }
+    'pages/about/site.md': {
+      routes: '/about/site'
+      views: never
+    }
+    'node_modules/valaxy-theme-hairy/pages/archives/index.md': {
+      routes: '/archives/'
+      views: never
+    }
+    'node_modules/valaxy-theme-hairy/pages/archives/[year]/index.vue': {
+      routes: '/archives/[year]/'
+      views: never
+    }
+    'node_modules/valaxy-theme-hairy/pages/archives/[year]/[month]/index.vue': {
+      routes: '/archives/[year]/[month]/'
+      views: never
+    }
+    'pages/categories/index.md': {
+      routes: '/categories/'
+      views: never
+    }
+    'node_modules/valaxy-theme-hairy/pages/categories/[...its].vue': {
+      routes: '/categories/[...its]'
+      views: never
+    }
+    'pages/links/index.md': {
+      routes: '/links/'
+      views: never
+    }
+    'node_modules/valaxy-theme-hairy/pages/page/[page].vue': {
+      routes: '/page/[page]'
+      views: never
+    }
+    'pages/posts/hello-valaxy.md': {
+      routes: '/posts/hello-valaxy'
+      views: never
+    }
+    'node_modules/valaxy-theme-hairy/pages/tags/index.md': {
+      routes: '/tags/'
+      views: never
+    }
+    'node_modules/valaxy-theme-hairy/pages/tags/[tag]/index.vue': {
+      routes: '/tags/[tag]/'
+      views: never
+    }
+  }
+
+  /**
+   * Get a union of possible route names in a certain route component file.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * @internal
+   */
+  export type _RouteNamesForFilePath<FilePath extends string> =
+    _RouteFileInfoMap extends Record<FilePath, infer Info>
+      ? Info['routes']
+      : keyof RouteNamedMap
 }

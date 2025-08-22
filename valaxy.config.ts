@@ -1,3 +1,4 @@
+
 import { defineConfig } from 'valaxy'
 import type { ThemeConfig } from 'valaxy-theme-hairy'
 import { addonWaline } from 'valaxy-addon-waline'
@@ -9,6 +10,7 @@ import { addonMeting } from 'valaxy-addon-meting'
  */
 export default defineConfig<ThemeConfig>({
   theme: 'hairy',
+
   addons: [
     addonMeting({
       global: true,

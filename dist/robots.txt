@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://bang1alex.github.io/sitemap.xml

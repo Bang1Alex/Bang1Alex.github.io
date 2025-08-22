@@ -1,65 +1,20 @@
-# 依赖包
-node_modules/
+# valaxy
 
-# 构建输出
+valaxy-fuse-list.json
 
-build/
-out/
+# vite-ssg
 
-# 日志文件
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.vite-ssg-dist
+.vite-ssg-temp
 
-# 环境变量文件
-.env
-.env.local
-.env.development
-.env.test
-.env.production
+temp/
 
-# 临时文件
-*.tmp
-*.temp
-*.swp
-
-# 打包压缩文件
-*.zip
-*.tar.gz
-
-# 编辑器相关
-.idea/
-.vscode/
-*.sublime-workspace
-
-# 测试相关
-coverage/
-*.lcov
-
-# Mac 系统文件
 .DS_Store
+*.local
+dist
+dist-ssr
+node_modules
+.idea/
+*.log
 
-# Yarn
-.yarn-integrity
-yarn.lock
-
-# Parcel 缓存
-.parcel-cache
-
-# Webpack / Vite 缓存
-.cache
-
-# TypeScript 缓存
-*.tsbuildinfo
-# valaxy fuse
-public/valaxy-fuse-list.json
-
-# valaxy rss
-public/feed.xml
-
-# valaxy rss
-public/atom.xml
-
-# valaxy rss
-public/feed.json
+components.d.ts

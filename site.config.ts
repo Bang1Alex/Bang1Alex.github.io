@@ -90,10 +90,7 @@ export default defineSiteConfig({
     },
   ],
 
-  search: {
-    enable: true,
-    type: 'algolia'
-  },
+
    mode: 'auto',
     comment: {
       enable: true,

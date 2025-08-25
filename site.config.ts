@@ -1,7 +1,7 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: 'https://valaxy.site/',
+  url: 'https://alexbang.netlify.app/',
   lang: 'zh-CN',
   title: 'Alex Notes',
   timezone: 'Asia/Shanghai',

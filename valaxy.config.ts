@@ -1,6 +1,8 @@
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { defineValaxyConfig } from 'valaxy'
-
+import { addonWaline } from 'valaxy-addon-waline'
+// import { addonComponents } from 'valaxy-addon-components'
+import { VitePWA } from 'vite-plugin-pwa'
 // add icons what you will need
 const safelist = [
   'i-ri-home-line',
@@ -10,14 +12,12 @@ const safelist = [
  * User Config
  */
 export default defineValaxyConfig<UserThemeConfig>({
-  // site config see site.config.ts
 
   theme: 'yun',
-
   themeConfig: {
     banner: {
       enable: true,
-      title: '云游君的小站',
+      title: '柱子笔记',
     },
 
     pages: [
@@ -43,6 +43,23 @@ export default defineValaxyConfig<UserThemeConfig>({
       },
     },
   },
-
+  vite: {
+    // https://vite-pwa-org.netlify.app/
+    plugins: [VitePWA()],
+  },
+    vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag:any) => tag.startsWith('my-')
+      }
+    }
+  },
   unocss: { safelist },
+    addons: [
+    // addonComponents()
+    addonWaline({
+      // Waline 配置项，参考 https://waline.js.org/reference/client/props.html
+      serverURL: 'https://your-waline-url',
+    }),
+  ],
 })

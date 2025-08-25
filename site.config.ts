@@ -3,12 +3,12 @@ import { defineSiteConfig } from 'valaxy'
 export default defineSiteConfig({
   url: 'https://valaxy.site/',
   lang: 'zh-CN',
-  title: 'Valaxy Theme Yun',
+  title: 'Alex Notes',
   timezone: 'Asia/Shanghai',
   author: {
-    name: '云游君',
+    name: 'AlexBang',
   },
-  description: 'Valaxy Theme Yun Preview.',
+  description: '一个喜欢折腾的切图仔',
   social: [
     {
       name: 'RSS',
@@ -91,9 +91,13 @@ export default defineSiteConfig({
   ],
 
   search: {
-    enable: false,
+    enable: true,
+    type: 'algolia'
   },
-
+   mode: 'auto',
+    comment: {
+      enable: true,
+    },
   sponsor: {
     enable: true,
     title: '我很可爱，请给我钱！',

@@ -24,15 +24,12 @@ declare module 'vue-router/auto-routes' {
     '/about/': RouteRecordInfo<'/about/', '/about', Record<never, never>, Record<never, never>>,
     '/about/site': RouteRecordInfo<'/about/site', '/about/site', Record<never, never>, Record<never, never>>,
     '/archives/': RouteRecordInfo<'/archives/', '/archives', Record<never, never>, Record<never, never>>,
-    '/archives/[year]/': RouteRecordInfo<'/archives/[year]/', '/archives/:year', { year: ParamValue<true> }, { year: ParamValue<false> }>,
-    '/archives/[year]/[month]/': RouteRecordInfo<'/archives/[year]/[month]/', '/archives/:year/:month', { year: ParamValue<true>, month: ParamValue<true> }, { year: ParamValue<false>, month: ParamValue<false> }>,
     '/categories/': RouteRecordInfo<'/categories/', '/categories', Record<never, never>, Record<never, never>>,
-    '/categories/[...its]': RouteRecordInfo<'/categories/[...its]', '/categories/:its(.*)', { its: ParamValue<true> }, { its: ParamValue<false> }>,
     '/links/': RouteRecordInfo<'/links/', '/links', Record<never, never>, Record<never, never>>,
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
+    '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
-    '/tags/[tag]/': RouteRecordInfo<'/tags/[tag]/', '/tags/:tag', { tag: ParamValue<true> }, { tag: ParamValue<false> }>,
   }
 
   /**
@@ -46,7 +43,7 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/valaxy-theme-hairy/pages/index.vue': {
+    'node_modules/valaxy-theme-yun/pages/index.vue': {
       routes: '/'
       views: never
     }
@@ -66,44 +63,32 @@ declare module 'vue-router/auto-routes' {
       routes: '/about/site'
       views: never
     }
-    'node_modules/valaxy-theme-hairy/pages/archives/index.md': {
+    'pages/archives/index.md': {
       routes: '/archives/'
-      views: never
-    }
-    'node_modules/valaxy-theme-hairy/pages/archives/[year]/index.vue': {
-      routes: '/archives/[year]/'
-      views: never
-    }
-    'node_modules/valaxy-theme-hairy/pages/archives/[year]/[month]/index.vue': {
-      routes: '/archives/[year]/[month]/'
       views: never
     }
     'pages/categories/index.md': {
       routes: '/categories/'
       views: never
     }
-    'node_modules/valaxy-theme-hairy/pages/categories/[...its].vue': {
-      routes: '/categories/[...its]'
-      views: never
-    }
     'pages/links/index.md': {
       routes: '/links/'
       views: never
     }
-    'node_modules/valaxy-theme-hairy/pages/page/[page].vue': {
+    'node_modules/valaxy-theme-yun/pages/page/[page].vue': {
       routes: '/page/[page]'
+      views: never
+    }
+    'node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+      routes: '/posts/'
       views: never
     }
     'pages/posts/hello-valaxy.md': {
       routes: '/posts/hello-valaxy'
       views: never
     }
-    'node_modules/valaxy-theme-hairy/pages/tags/index.md': {
+    'pages/tags/index.md': {
       routes: '/tags/'
-      views: never
-    }
-    'node_modules/valaxy-theme-hairy/pages/tags/[tag]/index.vue': {
-      routes: '/tags/[tag]/'
       views: never
     }
   }

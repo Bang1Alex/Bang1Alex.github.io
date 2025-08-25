@@ -1,5 +1,5 @@
 {
-  "name": "alex-blog",
+  "name": "valaxy-blog",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -13,9 +13,6 @@
   },
   "dependencies": {
     "valaxy": "0.26.3",
-    "valaxy-addon-meting": "^0.1.4",
-    "valaxy-addon-waline": "^0.2.1",
-    "valaxy-theme-hairy": "^1.2.7",
     "valaxy-theme-yun": "0.26.3"
   },
   "devDependencies": {

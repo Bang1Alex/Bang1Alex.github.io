@@ -1,33 +1,48 @@
+import type { UserThemeConfig } from 'valaxy-theme-yun'
+import { defineValaxyConfig } from 'valaxy'
 
-import { defineConfig } from 'valaxy'
-import type { ThemeConfig } from 'valaxy-theme-hairy'
-import { addonWaline } from 'valaxy-addon-waline'
-import { addonMeting } from 'valaxy-addon-meting'
+// add icons what you will need
+const safelist = [
+  'i-ri-home-line',
+]
 
 /**
  * User Config
- * do not use export const config to avoid defu conflict
  */
-export default defineConfig<ThemeConfig>({
-  theme: 'hairy',
+export default defineValaxyConfig<UserThemeConfig>({
+  // site config see site.config.ts
 
-  addons: [
-    addonMeting({
-      global: true,
-      props: {
-        // 设置你的网易云/qq或其他歌单 ID
-        id: '5312894314',
-        type: 'playlist',
-        autoplay: false,
-        theme: 'var(--hy-c-primary)',
+  theme: 'yun',
+
+  themeConfig: {
+    banner: {
+      enable: true,
+      title: '云游君的小站',
+    },
+
+    pages: [
+      {
+        name: '我的小伙伴们',
+        url: '/links/',
+        icon: 'i-ri-genderless-line',
+        color: 'dodgerblue',
       },
-    }),
-    // 请参考 https://waline.js.org/ 设置 serverURL 地址
-    addonWaline({
-      comment: true,
-      serverURL: '...',
-      emoji: [/*  */],
-      pageview: true,
-    }),
-  ]
+      {
+        name: '喜欢的女孩子',
+        url: '/girls/',
+        icon: 'i-ri-women-line',
+        color: 'hotpink',
+      },
+    ],
+
+    footer: {
+      since: 2016,
+      beian: {
+        enable: true,
+        icp: '苏ICP备17038157号',
+      },
+    },
+  },
+
+  unocss: { safelist },
 })

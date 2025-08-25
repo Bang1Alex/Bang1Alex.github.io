@@ -4,6 +4,7 @@ export default defineSiteConfig({
   url: 'https://valaxy.site/',
   lang: 'zh-CN',
   title: 'Valaxy Theme Yun',
+   timezone: 'Asia/Shanghai',
   author: {
     name: 'Alex',
   },

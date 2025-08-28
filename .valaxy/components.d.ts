@@ -8,8 +8,11 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppLink: typeof import('./../node_modules/valaxy/client/components/AppLink.vue')['default']
+    BszComponent: typeof import('./../components/BszComponent.vue')['default']
     Layout: typeof import('./../node_modules/valaxy-theme-sakura/components/core/layout.vue')['default']
     MetingJs: typeof import('./../node_modules/valaxy-addon-meting/components/MetingJs.vue')['default']
+    MindMap: typeof import('./../components/mindmap/MindMap.vue')['default']
+    NodeStyle: typeof import('./../components/mindmap/components/NodeStyle.vue')['default']
     README: typeof import('./../components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
@@ -105,6 +108,8 @@ declare module 'vue' {
     SakuraWaveHorizontal: typeof import('./../node_modules/valaxy-theme-sakura/components/SakuraWaveHorizontal.vue')['default']
     SakuraWaveRipple: typeof import('./../node_modules/valaxy-theme-sakura/components/SakuraWaveRipple.vue')['default']
     ShadowRoot: typeof import('./../node_modules/valaxy/client/components/internals/ShadowRoot.vue')['default']
+    Structure: typeof import('./../components/mindmap/components/Structure.vue')['default']
+    Theme: typeof import('./../components/mindmap/components/Theme.vue')['default']
     ValaxyAddons: typeof import('./../node_modules/valaxy/client/components/ValaxyAddons.vue')['default']
     ValaxyApp: typeof import('./../node_modules/valaxy-theme-sakura/components/core/ValaxyApp.vue')['default']
     ValaxyBangumi: typeof import('./../node_modules/valaxy-addon-bangumi/components/ValaxyBangumi.vue')['default']
@@ -124,5 +129,7 @@ declare module 'vue' {
     ValaxyThemeApp: typeof import('./../node_modules/valaxy-theme-sakura/components/core/ValaxyThemeApp.vue')['default']
     ValaxyTranslate: typeof import('./../node_modules/valaxy/client/components/builtin/ValaxyTranslate.vue')['default']
     WalineClient: typeof import('./../node_modules/valaxy-addon-waline/components/WalineClient.vue')['default']
+    YunFooter: typeof import('./../components/YunFooter.vue')['default']
+    YunPostMeta: typeof import('./../components/YunPostMeta.vue')['default']
   }
 }

@@ -129,7 +129,5 @@ declare module 'vue' {
     ValaxyThemeApp: typeof import('./../node_modules/valaxy-theme-sakura/components/core/ValaxyThemeApp.vue')['default']
     ValaxyTranslate: typeof import('./../node_modules/valaxy/client/components/builtin/ValaxyTranslate.vue')['default']
     WalineClient: typeof import('./../node_modules/valaxy-addon-waline/components/WalineClient.vue')['default']
-    YunFooter: typeof import('./../components/YunFooter.vue')['default']
-    YunPostMeta: typeof import('./../components/YunPostMeta.vue')['default']
   }
 }

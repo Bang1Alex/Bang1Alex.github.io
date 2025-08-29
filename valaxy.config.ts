@@ -260,6 +260,14 @@ export default defineValaxyConfig<UserThemeConfig>({
   vite: {
     // https://vite-pwa-org.netlify.app/
     plugins: [VitePWA()],
+      build: {
+    rollupOptions: {
+      external: [
+        'ant-design-vue',
+        'valaxy-theme-sakura',
+      ],
+    },
+  },
   },
   vue: {
     template: {

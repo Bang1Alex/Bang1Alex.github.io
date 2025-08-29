@@ -260,14 +260,12 @@ export default defineValaxyConfig<UserThemeConfig>({
   vite: {
     // https://vite-pwa-org.netlify.app/
     plugins: [VitePWA()],
-      build: {
-    rollupOptions: {
-      external: [
-        'ant-design-vue',
-        'valaxy-theme-sakura',
-      ],
-    },
-  },
+    resolve: {
+      alias: {
+        'simple-mind-map/src': 'simple-mind-map/dist',
+        'simple-mind-map-plugin-themes/src': 'simple-mind-map-plugin-themes/dist'
+      }
+    }
   },
   vue: {
     template: {

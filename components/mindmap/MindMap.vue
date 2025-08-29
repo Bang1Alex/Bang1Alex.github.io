@@ -66,14 +66,15 @@
     </div>
 
 </template>
-<script setup lang="ts">
+<script setup >
 import { ref, onMounted, Ref, shallowRef } from 'vue';
 import MindMap from "simple-mind-map"
+import Themes from 'simple-mind-map-plugin-themes'
 import MiniMap from 'simple-mind-map/src/plugins/MiniMap.js'
 import Drag from 'simple-mind-map/src/plugins/Drag.js'
 import Painter from 'simple-mind-map/src/plugins/Painter.js'
 import AssociativeLine from 'simple-mind-map/src/plugins/AssociativeLine.js'
-import Themes from 'simple-mind-map-plugin-themes'
+
 import TouchEvent from 'simple-mind-map/src/plugins/TouchEvent.js'
 import Export from 'simple-mind-map/src/plugins/Export.js'
 
@@ -90,9 +91,9 @@ Themes.init(MindMap)
 
 const widgetWidth = ref(720);
 const widgetHeight = ref(500);
-const refContainer: Ref<HTMLDivElement | null> = ref(null);
-let mindMap: any = null;
-const activeNodes = shallowRef([] as any[])
+const refContainer = ref(null);
+let mindMap = null;
+const activeNodes = shallowRef([] )
 const isStart = ref(true)
 const isEnd = ref(true)
 const isInPainter = ref(false)
@@ -117,7 +118,7 @@ const myStyle = ref({
     gradientStyle: false,
     startColor: '',
     endColor: ''
-}) as any
+}) 
 onMounted(() => {
     initMindMap()
 })
@@ -222,7 +223,7 @@ function initMindMap() {
             //   }
         })
     }
-    mindMap.on('node_active', (node: any, activeNodeList: any) => {
+    mindMap.on('node_active', (node, activeNodeList) => {
         activeNodes.value = activeNodeList;
         if (activeNodeList.length > 0) {
             [
@@ -250,7 +251,7 @@ function initMindMap() {
 
         }
     })
-    mindMap.on('back_forward', (index: any, len: any) => {
+    mindMap.on('back_forward', (index, len) => {
         isStart.value = index <= 0
         isEnd.value = index >= len - 1
     })
@@ -264,7 +265,7 @@ function initMindMap() {
 
     })
 }
-function execCommand(type:string) {
+function execCommand(type) {
   switch (type) {
     case 'BACK':
       mindMap.execCommand(type);
@@ -293,7 +294,7 @@ function execCommand(type:string) {
 function onPainterStart() {
   isInPainter.value = true
 }
-function clickCustomToolbar(type:string) {
+function clickCustomToolbar(type) {
   visible.value = true
   switch (type) {
     case 'nodeStyle':
@@ -307,11 +308,9 @@ function clickCustomToolbar(type:string) {
       break;
     case 'structure':
       customToolbarTitle.value = '结构'
-
-
   }
 }
-function getImageUrlFromPath(imagePath: string) {
+function getImageUrlFromPath(imagePath) {
   const url = "";
   if (!imagePath) return `${url}/${'controls/mindmap/resources/image/default.png'}`;
   return `${url}/${imagePath}`;
